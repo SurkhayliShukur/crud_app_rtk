@@ -32,7 +32,7 @@ const UpdateItem = () => {
 
     const editedProduct = async () => {
         try {
-            updateProduct({ id, updateProduct: editProduct })
+          await  updateProduct({ id, updateProduct: editProduct })
             toast.success("edited successfully", {
                 autoClose: 1000
             })
